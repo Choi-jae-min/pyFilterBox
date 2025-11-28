@@ -103,13 +103,13 @@ def main():
 
     with col1:
         st.subheader("원본 이미지")
-        st.image(image, use_container_width=True)
+        st.image(image, use_column_width=True)
 
     filtered_image = apply_filter(image, filter_name, intensity)
 
     with col2:
         st.subheader(f"필터 적용: {filter_name}")
-        st.image(filtered_image, use_container_width=True)
+        st.image(filtered_image, use_column_width=True)
 
     st.write("---")
 
